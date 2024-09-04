@@ -34,8 +34,15 @@ const MainPage = () => {
       <div className="flex flex-col md:flex-row w-full min-h-screen justify-between">
         {/* right (Chat Preview) - First on mobile */}
         <div className="order-1 sticky top-36 md:top-0 md:order-2 flex-1 flex items-center justify-center h-screen">
-          <div className="md:h-[35rem] h-[30rem] w-[35rem] rounded-md md:w-[40rem] border flex items-center justify-center border-black">
-            chat preview
+          <div className="md:h-[35rem] overflow-hidden h-[30rem] w-[35rem] rounded-md md:w-[40rem] border flex items-center justify-center border-black">
+            <iframe
+              src="https://dify.sbazar.in/chatbot/BTqYtNEbUKtQCAac"
+              // style="width: 100%; height: 100%; min-height: 700px"
+              className="w-full h-full"
+              // frameborder="0"
+              allow="microphone"
+            >
+            </iframe>
           </div>
         </div>
 
